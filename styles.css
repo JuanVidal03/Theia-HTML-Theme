@@ -1,0 +1,99 @@
+/* Glocal styles */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: url('https://goldeyes.net/quadra/images/cursor-dot.svg'), default;
+}
+
+h1{font-size: 3.5rem;}
+h2{font-size: 3rem;}
+h3{font-size: 2.5rem;}
+h4{font-size: 2rem;}
+h5{font-size: 1.6rem;}
+h6{font-size: 1.3rem;}
+
+:root{
+    --black: #1A1A1A;
+    --red: #F04A37;
+}
+
+::selection{
+    background-color: var(--red);
+    color: #fff;
+}
+
+/* cursor */
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f285;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -45%);
+    transition: all ease .1s;
+}
+
+/* Header styles */
+.header-container-desktop, .navBar{
+    width: 100%;
+}
+.header-container-desktop{
+    padding: 0 3rem;
+    border-bottom: solid 1px #e0dbdb;
+    background-color: #fff;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.menu-item{
+    position: relative;
+    list-style: none;
+    height: 60px;
+    width: 70px;
+    transition: all ease .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+.menu-item::after{
+    position: absolute;
+    content: '';
+    background-color: var(--red);
+    width: 100%;
+    height: 2px;
+    top: 0%;
+    left: 0%;
+    transition: all ease .3s;
+    transform: scale(0);
+}
+.item{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 500;
+    font-size: .8rem;
+    transition: all ease .3s;
+}
+.menu-item:hover .item{
+    color: var(--red);
+}
+.menu-item:hover::after{
+    transform: scale(1.1);
+}
+
+/* En header styles */
