@@ -41,3 +41,34 @@ carousel.addEventListener('mouseout', () => {
 });
 
 start();
+
+
+// Theory squares
+const squareContainer = document.querySelector('.theory-squares-container');
+
+const squaresInfo = [
+    {
+        icon: '<i class="fa-solid fa-cube theory-icon"></i>',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    },
+    {
+        icon: '<i class="fa-solid fa-panorama theory-icon"></i>',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    },
+    {
+        icon: '<i class="fa-solid fa-palette theory-icon"></i>',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    }
+];
+
+squaresInfo.forEach(square => {
+    const div = document.createElement('div');
+    div.classList.add('square');
+
+    div.innerHTML = `
+        ${square.icon}
+        <p>${square.text}</p>
+    `;
+
+    squareContainer.appendChild(div);
+});
