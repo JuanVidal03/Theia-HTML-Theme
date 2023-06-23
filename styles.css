@@ -203,6 +203,12 @@ p{font-size: 1.2rem;}
 
 
 /* carousel styles */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .carousel-items{
     display: flex;
     overflow-x: hidden;
@@ -509,6 +515,132 @@ p{font-size: 1.2rem;}
 }
 
 /* End Contact Styles */
+
+/* Footer styles */
+.footer{
+    width: 100%;
+    padding: 4rem 4rem 0 4rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgb(36,35,35);
+    background: radial-gradient(circle, rgba(36,35,35,1) 0%, rgba(15,15,15,1) 51%);
+}
+
+.footer-info-container{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.footer-div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 2rem;
+}
+
+.footer-logo img{
+    width: 70px;
+}
+
+.footer-logo h5{
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.footer-location h6{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.footer-location p{
+    color: var(--gray-text);
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.footer-location a{
+    color: var(--gray-text);
+    font-weight: 300;
+}
+
+.newsletter h6{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.newsletter p > span{
+    color: var(--red);
+}
+
+.newsletter p{
+    color: var(--gray-text);
+    font-weight: 300;
+}
+
+.newsletter-input{
+    width: 100%;
+    position: relative;
+}
+
+.newsletter-input input{
+    height: 3rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: var(--gray-title);
+    background-color: #f2f2f221;
+    border-radius: 50px;
+    border: none;
+}
+
+.newsletter-input input:focus{
+    color: var(--gray-text);
+    outline: none;
+}
+
+.newsletter-input button{
+    position: absolute;
+    border-radius: 50px;
+    text-transform: uppercase;
+    height: 3rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    left: 80%;
+    font-weight: 400;
+    background-color: var(--red);
+    color: #fff;
+}
+
+.footer-credits-container{
+    width: 100%;
+    border-top: solid var(--gray-text) 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.footer-credits-container h6{
+    font-weight: 300;
+    color: var(--gray-text);
+}
+
+.footer-credits-container h6 > a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* End Footer styles */
 
 
 /* Responsive design */
