@@ -407,6 +407,110 @@ p{font-size: 1.2rem;}
 }
 /* End Creators styles */
 
+/* Contact Styles */
+.contact-container{
+    width: 100%;
+    padding: 5rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-text-container{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-text-container h6, .contact-text-container h3, .contact-text-container p{
+    text-align: center;
+    font-weight: 400;
+}
+
+.contact-text-container h6{
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.contact-text-container h3{
+    font-family: 'Prata', sans-serif;
+    color: var(--gray-title);
+    margin: 2rem 0;
+    line-height: 2.5rem;
+}
+
+.contact-text-container p{
+    color: var(--gray-text);
+    font-weight: 300 !important;
+    margin-bottom: 2rem;
+}
+
+.form-contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fom-inputs-container{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form-input, .form-textarea{
+    width: 100%;
+}
+
+.form-input input{
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    outline: none;
+    border-radius: 4px;
+    border: solid 1px #F4F4F4;
+    background-color: #F4F4F4;
+    font-size: 1.1rem;
+}
+
+.form-textarea textarea{
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    outline: none;
+    border-radius: 4px;
+    border: solid 1px #F4F4F4;
+    background-color: #F4F4F4;
+    font-size: 1.1rem;
+}
+
+.form-submit{
+    text-transform: uppercase;
+    background-color: var(--red);
+    color: #fff;
+    padding: 1rem 4rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .4);
+    transition: all ease-in-out .3s;
+}
+
+.form-submit:hover{
+    letter-spacing: .2rem;
+}
+
+/* End Contact Styles */
+
+
 /* Responsive design */
 /* Tablet view */
 @media screen and (max-width: 800px){
